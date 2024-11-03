@@ -1,0 +1,150 @@
+/* Estilo para el título general sin sombra */
+.dashboard-title {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+/* Estilo para el nombre del usuario */
+.user-name {
+    font-size: 2.5rem;
+    color: #343a40;
+    text-shadow: none;
+}
+
+/* Estilo para los títulos de las cards sin sombra */
+.card-title {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+/* Estilo para los enlaces dentro de las cards con fondo oscuro */
+.custom-link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los enlaces dentro de las cards con fondo claro */
+.custom-link-black {
+    font-size: 1.2rem;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.custom-link-black:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para mantener el footer en la parte inferior */
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 2px 0; /* Reduce el padding para hacer el footer más pequeño */
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Nueva clase para título en color dark (gris oscuro) con estilo similar a dashboard-title */
+.dashboard-title-dark {
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Fondo estilo tablero */
+.login-board {
+    background-color: #f1e0c5;
+    background-image: url('https://www.transparenttextures.com/patterns/corkboard.png');
+    background-size: cover;
+    position: relative;
+}
+
+/* Estilo para las tarjetas pequeñas */
+.small-card {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.small-card:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+/* Estilo de la tarjeta principal */
+.main-card {
+    width: 25rem;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.main-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo del label del checkbox */
+.checkbox-label {
+    font-size: 1rem;
+    color: #343a40;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.checkbox-label:hover {
+    color: #0056b3;
+}
+
+/* Colores claros para las cards */
+.bg-light-green {
+    background-color: #a8d5ba;
+}
+
+.bg-light-orange {
+    background-color: #f7c9a9;
+}
+
+.bg-light-red {
+    background-color: #f7a8a9;
+}
+
+/* Tarjetas pequeñas de fondo para EstadoCRUD */
+.estado-crud-container {
+    position: relative; /* Asegura que las tarjetas pequeñas se posicionen en relación con este contenedor */
+    overflow: hidden; /* Evita que las tarjetas se desborden */
+}
+
+.small-card-estado {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0.75;
+    z-index: 0; /* Asegura que estén detrás del contenido principal */
+    transition: transform 0.3s ease-in-out;
+}
+
+.small-card-estado:hover {
+    transform: scale(1.1);
+}
+
